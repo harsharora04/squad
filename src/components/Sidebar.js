@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import HomeIcon from "../assets/images/dropdown/home.svg";
+import HomeIcon from "../assets/images/dropdown/home.png";
 
 const NAV_ITEMS = [
   {
@@ -28,7 +28,7 @@ const Sidebar = () => {
     const { page, icon, link } = item;
     return (<li key={page}>
         <CustomLink to={link} >
-          <img className="block mr-2" src={icon} alt={page} />
+          <img className="block w-5	h-5 object-contain mr-2" src={icon} alt={page} />
           <span>{page}</span>  
         </CustomLink>
     </li>)

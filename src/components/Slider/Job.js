@@ -1,5 +1,5 @@
 import { memo } from "react";
-import TimerIcon from "../../assets/images/cards/timer.svg";
+import TimerIcon from "../../assets/images/cards/timer.png";
 import {differenceInHours} from "date-fns";
 
 const Job = ({ data }) => {
@@ -26,14 +26,14 @@ const Job = ({ data }) => {
     </div>
     <div className="flex pt-5 items-center justify-center">
       <div className="flex items-center">
-        <img src={TimerIcon} className="mr-2" alt="timer" />
+        <img src={TimerIcon} className="w-8	h-8 object-contain mr-2" alt="timer" />
         <div>
           <p className="text-xs text-[#757575]">Upto</p>
           <p className="text-sm">{earningsFormatted}</p>
         </div>
       </div>
       <div className="flex items-center ml-4">
-        <img src={TimerIcon} className="mr-2" alt="timer" />
+        <img src={TimerIcon} className="w-8	h-8 object-contain mr-2" alt="timer" />
         <div>
           <p className="text-xs text-[#757575]">Time</p>
           <p className="text-sm">{hourTime}</p>

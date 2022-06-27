@@ -5,8 +5,8 @@ import Announcement from "./Announcement";
 import Community from "./Community";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import LeftArrow from "../../assets/images/slider/left-arrow.svg";
-import RightArrow from "../../assets/images/slider/right-arrow.svg";
+import LeftArrow from "../../assets/images/slider/left-arrow.png";
+import RightArrow from "../../assets/images/slider/right-arrow.png";
 import classNames from "classnames";
 import { memo } from "react";
 import Loader from "./Loader";
@@ -66,7 +66,7 @@ const SLIDE_COMPONENT = {
 const CustomArrow = (props) => {
   const { className, type, onClick } = props;
   const arrow = type === 'left' ? LeftArrow : RightArrow;
-  const arrowClassName = classNames('absolute top-1/2',
+  const arrowClassName = classNames('w-2 h-auto absolute top-1/2',
     type === 'left' ? '-ml-4 lg:-ml-8' : 'right-0 -mr-4 lg:-mr-8',
     className.includes('slick-disabled') ? 'opacity-0' : '');
   return (
